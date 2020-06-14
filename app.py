@@ -35,7 +35,7 @@ def predict():
     img2 = img_to_array(img1)
     print(img2)
     img3 = img2.reshape(1, 100, 100, 3)
-    model=pickle.load(open("wb.pkl",'rb'))
+    model=pickle.load(open("wb1.pkl",'rb'))
     result =model.predict_classes(img3)
     s=result[0]
     print(s)
